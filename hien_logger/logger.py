@@ -7,8 +7,6 @@ from copy import copy
 from pathlib import Path
 from typing import Literal
 
-from .utils import get_date_format
-
 TRACE_LOG_LEVEL = 5
 
 

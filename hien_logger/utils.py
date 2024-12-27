@@ -6,6 +6,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+def setup_timezone(tz: str = "Asia/Ho_Chi_Minh") -> str:
+    """
+    Set up the timezone for the application
+    """
+    os.environ["TZ"] = tz
+
+
 def convert_boolean_env_var(env_var: str) -> bool:
     """
     Convert a boolean environment variable to a boolean value.

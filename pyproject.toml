@@ -7,7 +7,7 @@ packages = ["hien_logger"]
 
 [project]
 name = "hien_logger"
-version = "0.0.2"
+version = "0.0.2.2"
 authors = [{ name = "hienhayho", email = "hienhayho3002@gmail.com" }]
 description = "A colorful logger for Python's applications."
 readme = "README.md"
