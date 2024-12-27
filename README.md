@@ -1,14 +1,22 @@
 ## Colorful logger for application
 
-#### 1. Installation
+#### I. Installation
 
-You can easily install it from pypi:
+- You can easily install it from pypi:
 
 ```bash
 pip install hien_logger
 ```
 
-#### 2. Usage
+- Or you can also install it from source:
+
+```bash
+git clone https://github.com/hienhayho/hien_logger.git
+
+pip install -v .
+```
+
+#### II. Usage
 - You can use it as a console logger:
 ```python
 from hien_logger import get_formatted_logger
@@ -23,7 +31,7 @@ logger.info("Hello World")
 from hien_logger import get_formatted_logger
 
 logger = get_formatted_logger(
-    name="hien_logger", 
+    name="hien_logger",
     file_path="test.log"
 )
 
