@@ -1,0 +1,17 @@
+[project]
+name = "hien_logger"
+version = "0.0.1"
+authors = [{ name = "hienhayho", email = "hienhayho3002@gmail.com" }]
+description = "A colorful logger for Python's applications."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["click>=8.1.8", "pytz>=2024.2", "python-dotenv>=1.0.1"]
+
+[project.urls]
+Homepage = "https://github.com/hienhayho/hien_logger"
+Issues = "https://github.com/hienhayho/hien_logger/issues"
