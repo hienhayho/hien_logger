@@ -34,7 +34,7 @@ pip install pytest
 pytest
 ```
 
-## II. Usage:
+## II. Usage
 
 - You can use it as a console logger:
 
