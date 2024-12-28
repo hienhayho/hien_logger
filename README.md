@@ -13,6 +13,8 @@ pip install hien_logger
 ```bash
 git clone https://github.com/hienhayho/hien_logger.git
 
+cd hien_logger/
+
 pip install -v .
 ```
 
@@ -61,4 +63,4 @@ logger.info("Hello World")
 
 ## III. LICENSE
 
-`hien_logger` in under [MIT LICENSE.](./LICENSE)
+`hien_logger` is under [MIT LICENSE.](./LICENSE)
