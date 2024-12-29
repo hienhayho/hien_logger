@@ -2,13 +2,13 @@
 
 ## I. Installation
 
-- You can easily install it from pypi:
+**1.** You can easily install it from pypi:
 
 ```bash
 pip install hien_logger
 ```
 
-- Or you can also install it from source:
+**2.** Or you can also install it from source:
 
 ```bash
 git clone https://github.com/hienhayho/hien_logger.git
@@ -18,15 +18,7 @@ cd hien_logger/
 pip install -v .
 ```
 
-**Optional**:
-
-- You can set datetime to your timezone:
-
-```python
-from hien_logger import setup_timezone
-
-setup_timezone("Asia/Ho_Chi_Minh")
-```
+**Optional:**
 
 - To make sure `hien_logger` was sucessfully installed, run this:
 
@@ -59,6 +51,14 @@ logger = get_formatted_logger(
 )
 
 logger.info("Hello World")
+```
+
+- You can set datetime to your timezone:
+
+```python
+from hien_logger import setup_timezone
+
+setup_timezone("Asia/Ho_Chi_Minh")
 ```
 
 ## III. LICENSE
