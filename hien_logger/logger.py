@@ -7,6 +7,8 @@ from copy import copy
 from pathlib import Path
 from typing import Literal
 
+from .utils import get_date_format
+
 TRACE_LOG_LEVEL = 5
 
 
@@ -167,7 +169,10 @@ class FileFormater(logging.Formatter):
 
 
 def get_formatted_logger(
-    name: str, file_path: str | None = None, global_file_log: bool = False
+    name: str,
+    file_path: str | None = None,
+    include_date: bool = False,
+    global_file_log: bool = False,
 ) -> logging.Logger:
     """
     Get a coloured logger.
@@ -175,12 +180,11 @@ def get_formatted_logger(
     Args:
         name (str): The name of the logger.
         file_path (str | None): The path to the log file. Defaults to `None`.
-        global_file_log (bool): Whether to log to the global file. Defaults to `False`.
+        include_date (bool): Whether to include the date in the log file name. Defaults to `False`.
+        global_file_log (bool): Whether to log to the global file. Defaults to `False`. Log file is `logs/global.log`.
 
     Returns:
         logging.Logger: The logger object.
-
-    **Note:** Name is only used to prevent from being root logger.
     """
     logger = logging.getLogger(name=name)
     logger.setLevel(TRACE_LOG_LEVEL)
@@ -199,6 +203,19 @@ def get_formatted_logger(
 
     if file_path:
         Path(file_path).parent.mkdir(parents=True, exist_ok=True)
+
+        file_name = Path(file_path).stem
+        extension = Path(file_path).suffix
+
+        if include_date:
+            file_name += f"_{get_date_format()}"
+
+            full_path = Path(f"{Path(file_path).parent}/{file_name}{extension}")
+
+            if not full_path.exists():
+                full_path.touch()
+
+            file_path = str(full_path)
 
         file_handler = logging.FileHandler(file_path)
         file_formatter = FileFormater(

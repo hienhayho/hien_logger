@@ -53,6 +53,33 @@ logger = get_formatted_logger(
 logger.info("Hello World")
 ```
 
+- You can include date of this file log with `include_date=True`. Then the date will be included in file log name.
+
+```python
+from hien_logger import get_formatted_logger
+
+logger = get_formatted_logger(
+    name="hien_logger",
+    file_path="test.log",
+    include_date=True
+)
+
+logger.info("Hello World")
+```
+
+- Log all to one global file:
+
+```python
+from hien_logger import get_formatted_logger
+
+logger = get_formatted_logger(
+    name="hien_logger",
+    global_file_log=True
+)
+
+logger.info("Hello World")
+```
+
 - You can set datetime to your timezone:
 
 ```python
