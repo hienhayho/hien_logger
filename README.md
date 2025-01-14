@@ -1,6 +1,12 @@
 # Colorful logger for application
 
-## I. Installation
+<div align="center">
+
+![Downloads](https://img.shields.io/pypi/dm/hien_logger) ![GitHub CI](https://github.com/hienhayho/hien_logger/actions/workflows/install_package.yml/badge.svg)
+
+</div>
+
+## :wrench: I. Installation
 
 **1.** You can easily install it from pypi:
 
@@ -28,7 +34,7 @@ pip install pytest
 pytest
 ```
 
-## II. Usage
+## :tada: II. Usage
 
 - You can use it as a console logger:
 
@@ -88,6 +94,6 @@ from hien_logger import setup_timezone
 setup_timezone("Asia/Ho_Chi_Minh")
 ```
 
-## III. LICENSE
+## :book: III. LICENSE
 
 `hien_logger` is under [MIT LICENSE.](./LICENSE)
