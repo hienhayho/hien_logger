@@ -1,8 +1,8 @@
-# Colorful logger for application
+# Colorful logger
 
 <div align="center">
 
-![Downloads](https://img.shields.io/pypi/dm/hien_logger) ![GitHub CI](https://github.com/hienhayho/hien_logger/actions/workflows/install_package.yml/badge.svg)
+![Downloads](https://img.shields.io/pypi/dm/hien_logger) ![GitHub CI](https://github.com/hienhayho/hien_logger/actions/workflows/install_package.yml/badge.svg) ![License](https://img.shields.io/badge/license-MIT-green)
 
 </div>
 
@@ -14,7 +14,13 @@
 pip install hien_logger
 ```
 
-**2.** Or you can also install it from source:
+**2.** You can also install it from source:
+
+```bash
+pip install git+https://github.com/hienhayho/hien_logger.git
+```
+
+- Or
 
 ```bash
 git clone https://github.com/hienhayho/hien_logger.git
@@ -22,15 +28,9 @@ git clone https://github.com/hienhayho/hien_logger.git
 cd hien_logger/
 
 pip install -v .
-```
 
-**Optional:**
-
-- To make sure `hien_logger` was sucessfully installed, run this:
-
-```bash
+# Optional: Test if installed successfully.
 pip install pytest
-
 pytest
 ```
 
