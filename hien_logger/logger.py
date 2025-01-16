@@ -185,6 +185,19 @@ def get_formatted_logger(
 
     Returns:
         logging.Logger: The logger object.
+
+    Example:
+    ```python
+    from hien_logger import get_formatted_logger
+
+    logger = get_formatted_logger("hien_logger")
+
+    logger.info("Hello, World!")
+    logger.debug("Hello, World!")
+    logger.warning("Hello, World!")
+    logger.error("Hello, World!")
+    logger.critical("Hello, World!")
+    ```
     """
     logger = logging.getLogger(name=name)
     logger.setLevel(TRACE_LOG_LEVEL)

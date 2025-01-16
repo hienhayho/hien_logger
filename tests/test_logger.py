@@ -8,6 +8,16 @@ def test_logger():
     assert True
 
 
+def test_function():
+    logger = get_formatted_logger("hien_logger")
+    logger.info("Hello, World!")
+    logger.debug("Hello, World!")
+    logger.warning("Hello, World!")
+    logger.error("Hello, World!")
+    logger.critical("Hello, World!")
+    assert True
+
+
 def test_logger_file():
     logger = get_formatted_logger("hien_logger", file_path="test.log")
     logger.info("Hello, World!")
