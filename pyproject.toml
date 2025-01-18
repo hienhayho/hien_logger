@@ -8,11 +8,11 @@ packages = ["hien_logger"]
 
 [project]
 name = "hien_logger"
-version = "0.0.3.0"
+version = "0.0.3.1"
 authors = [{ name = "hienhayho", email = "hienhayho3002@gmail.com" }]
 description = "A colorful logger for Python's applications."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
